@@ -1,0 +1,14 @@
+{
+  "name": "product-eng-skills-test",
+  "version": "1.0.0",
+  "description": "Product Engineer Skills Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grow Progress",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
