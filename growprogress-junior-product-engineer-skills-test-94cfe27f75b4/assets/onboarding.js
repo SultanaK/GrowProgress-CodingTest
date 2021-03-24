@@ -1,6 +1,6 @@
 // Write your js code here
 
-/* must apply only after HTML has loaded */
+
 $(document).ready(function () {
     $("#contact_form").on("submit", function(e) {
         var postData = $(this).serializeArray();
@@ -26,3 +26,14 @@ $(document).ready(function () {
     });
 });
 
+//driver.js Popover
+
+const driver = new Driver();
+driver.highlight({
+  element: '#sidebar-filters',
+  popover: {
+    title: 'Title for the Popover',
+    description: 'Description for it',
+  }
+});
+driver.start();
