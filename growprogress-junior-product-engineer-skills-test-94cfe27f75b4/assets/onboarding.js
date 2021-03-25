@@ -23,50 +23,50 @@ $(document).ready(function() {
 	$('#submitForm').on('click', function() {
 		$('#contact_form').submit();
 	});
-//});
+});
 
 //driver.js Popove
-//$('[data-toggle="popover"]').popover()
-    
-        
-    
-        const driver = new Driver();
-        driver.defineSteps([
-            {
-                element: '#sidebar-content',
-                popover: {
-                    title: 'Sidebar',
-                    description: 'Select  your option',
-                }
-    
-            },
-            {
-                element: '#widget-1',
-                popover: {
-                    title: 'Favorite Ice Cream',
-                    description: 'Represent Votes for Icecream',
-                    position: 'top'
-                }
-            },
-            {
-                element: '#widget-2',
-                popover: {
-                    title: 'Favorite Letter in Alphabet',
-                    description: 'letter representation',
-                    position: 'right'
-                }
-            },
-            {
-                element: '#widget-3',
-                popover: {
-                    title: 'Title on Popover',
-                    description: 'Body of the popover',
-                    position: 'right'
-                }
-            },
-        ]);
 
-  
-        driver.start();
+    //const driver = new Driver();
+$('#tour').on("click", function () {
+    const driver = new Driver();
+    driver.defineSteps([
+        {
+            element: '#sidebar-content',
+            popover: {
+                title: 'Sidebar',
+                description: 'Select  your option',
+            }
     
-});
+        },
+        {
+            element: '#widget-1',
+            popover: {
+                title: 'Favorite Ice Cream',
+                description: 'Represent Votes for Icecream',
+                position: 'top'
+            }
+        },
+        {
+            element: '#widget-2',
+            popover: {
+                title: 'Favorite Letter in Alphabet',
+                description: 'letter representation',
+                position: 'right'
+            }
+        },
+        {
+            element: '#widget-3',
+            popover: {
+                title: 'Title on Popover',
+                description: 'Body of the popover',
+                position: 'right'
+            }
+        },
+    ]);
+
+     
+    driver.start();
+})     
+
+   

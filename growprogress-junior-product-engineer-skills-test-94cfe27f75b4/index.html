@@ -221,7 +221,7 @@
             <div class="modal-content">
 
                 <div class="modal-body">
-                    <form id="contact_form" action="/onlinejson/test.php" method="POST">
+                    <form id="contact_form" action="/api/user-feedback" method="POST">
                         First name: <input type="text" name="first_name" required><br />
                         Last name: <input type="text" name="last_name" required><br />
                         Email: <input type="email" name="email" required><br />
@@ -231,7 +231,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="popover" data-content="Content">Take a tour</button>
+                    <button type="button" id="tour" class="btn btn-default" data-dismiss="modal" data-toggle="popover" data-content="Content">Take a tour</button>
                     <button type="button" id="submitForm" class="btn btn-default">Send</button>
                 </div>
             </div>
