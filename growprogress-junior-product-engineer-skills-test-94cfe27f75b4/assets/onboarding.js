@@ -27,8 +27,8 @@ $(document).ready(function() {
 
 //driver.js Popove
 
-    //const driver = new Driver();
-$('#tour').on("click", function () {
+    
+//$('#tour').on("click", function () {
     const driver = new Driver();
     driver.defineSteps([
         {
@@ -67,6 +67,6 @@ $('#tour').on("click", function () {
 
      
     driver.start();
-})     
+//})     
 
    
